@@ -1,6 +1,6 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View } from "react-native";
-import { ThemeProvider, useTheme } from "@shared-packages/mobile-theme";
+import { ThemeProvider, useTheme } from "@amalpsojan/mobile-theme";
 
 const App = () => {
   const { colors, dark } = useTheme();
