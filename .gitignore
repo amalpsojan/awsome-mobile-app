@@ -2,12 +2,14 @@
 
 # dependencies
 node_modules/
-lib/
+libs/
+yarn.lock
 
 # Expo
 .expo/
 dist/
 web-build/
+.vscode/
 
 # Native
 *.orig.*
