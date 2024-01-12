@@ -12,13 +12,6 @@ const sharedLibDirectory = path.join(
 );
 const gitRepo = "git@github.com:amalpsojan/shared-monorepo.git";
 
-const indexFilePath = path.join(projectDirectory, "index.js");
-const indexFileContent = `import { registerRootComponent } from "expo";
-import App from "./App";
-
-registerRootComponent(App);
-`;
-
 const metroConfigFilePath = path.join(projectDirectory, "metro.config.js");
 const metroConfigContent = `
 const { getDefaultConfig } = require("expo/metro-config");
@@ -79,7 +72,6 @@ function checkMonorepoAccess() {
     }
 
     console.log("Packages linked successfully!");
-    createFile(indexFilePath, indexFileContent);
     createFile(metroConfigFilePath, metroConfigContent);
 
     console.warn("Run Expo Cache clearing Script before running (clear)");
