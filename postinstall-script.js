@@ -73,8 +73,6 @@ function checkMonorepoAccess() {
 
     console.log("Packages linked successfully!");
     createFile(metroConfigFilePath, metroConfigContent);
-
-    console.warn("Run Expo Cache clearing Script before running (clear)");
   } catch (error) {
     console.error("User does not have access to the monorepo. Please check your permissions.");
   }
